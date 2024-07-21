@@ -1,0 +1,139 @@
+.b1-headerblock{
+    background-color: rgb(80, 83, 83);
+    padding-left: 100px;
+    margin-left: -50px;
+    margin-top:-10px;
+    margin-right: -50px;
+    padding-top: 20px;
+    font-family: 'Roboto Slab' ;
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.b1-clubbbooks{
+    display: inline-block;
+
+}
+.b1-homeiconpic{
+    width: 30px;
+    position: absolute;
+    right: 0;
+    margin-top: -15px;
+    padding-right: 60px;
+    
+
+}
+.b1-headerblock{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+
+}
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+}
+.star-rating input[type="radio"] {
+    display: none;
+}
+.star-rating label {
+    font-size: 5rem;
+    color: #ccc;
+    cursor: pointer;
+}
+.star-rating input[type="radio"]:checked ~ label {
+    color: green;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: gold;
+}
+.b1-rating{
+ margin-left: 100px;
+ margin-bottom: 50px;
+}
+.b1-ratethis{
+    font-size: 40px;
+    color: green;
+}
+.b1-buying a{
+    text-decoration: none;
+}
+.b1-limited{
+    margin-left: 50px;
+    font-size: 30px;
+}
+.b1-Aboutthisbook{
+    font-size: 23px;
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+.b1-bookinformation{
+    font-size: 25px;
+    margin-left:60px;
+    margin-bottom: 70px;
+}
+.b1-infogrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 600px;
+}
+
+.b1-infogridcolumn2{
+
+    padding-left: 20px;
+    margin-right: 20px;
+}
+.b1-price,.b1-freesample{
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 22px;
+}
+.b1-price{
+    margin-top: 180px;
+    background-color: green;
+    color: white;
+    border-color: green;
+}
+.b1-freesample{
+    border-color: green;
+    color: rgb(211, 0, 0);
+    background-color: white;
+    text-decoration: line-through;
+}
+.b1-bookthumbnail{
+   width: 300px;
+    margin-left: 100px;
+    border: solid;
+    margin-top: 50px;
+    border-color: rgba(0, 0, 0, 0.192);
+}
+.b1-author{
+    font-size: 35px;
+    margin-top: 35px;
+    color: #0067ab;
+}
+.b1-date{
+    margin-top: 10px;
+    font-size: 30px;
+    padding-right: 20px;
+    opacity: 0.7;
+}
+.b1-pageno{
+    font-size: 30px;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+.b1-bookname{
+    font-weight: bold;
+    padding-top: 50px;
+    font-family: 'Ubuntu';
+    font-size: 45px;
+
+}
