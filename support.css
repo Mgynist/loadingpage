@@ -1,0 +1,106 @@
+.second4{
+    color: white;
+}
+.s-men{
+    position: relative;
+    left: 50%;
+    top: 200px;
+    transform: translateX(-50%);
+}
+.s-content{
+    margin-bottom: 300px;
+}
+ .s-aistatus{
+    font-size: 30px;
+    color: rgb(162, 162, 162);
+    margin-left: 280px;
+    margin-bottom: 200px;
+ }
+ .aiphoto{
+    position: relative;
+    margin-top: 150px;
+    margin-left: 150px;
+    border: 2px solid rgb(255, 255, 255);;
+    border-radius: 5px;
+
+ }
+ .s-name{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-left: 365px;
+    margin-top: -5px;
+ }
+ .s-cricketGrids{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    height: 100%;
+ }
+ .s-selenaIndian{
+    width: 100%;
+ }
+ .s-cricketCardGrids{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+ }
+ .s-cricketCards{
+    width: 75%;
+    margin-top: 25px;
+ }
+ .s-cricketWithSelena{
+    padding-top: 50px;
+    color: white;
+    margin: 20px 50px;
+    font-size: 35px;
+    margin-bottom: 50px;
+    opacity: 0.6;
+
+ }
+ .s-cricketCardGrids img{
+   cursor: pointer;
+ }
+ .s-cricketCardGrids img:hover{
+   transform: scale(1.1);
+   transition: 0.2s;
+ }
+ .s-cricketRules{
+   color: rgb(194, 194, 194);
+   font-size: 20px;
+
+ }
+ .s-helpButtons button{
+
+   margin: 10px 60px;
+   font-size: 18px;
+   color: rgb(255, 255, 255);
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+
+ }
+ .s-toss{
+   padding: 10px;
+   font-size: 15px;
+   background-color: green;
+   margin-top: 20px;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+ }
+ .s-tournamentstat{
+   background-color: purple;
+   padding: 15px;
+ }
+ .s-knowCurrentScore{
+   background-color: blue;
+   padding: 15px 32px;
+ }
+ .s-knowTargetScore{
+   background-color: brown;
+   padding: 15px 37px;
+ }
+ .s-newGame{
+   background-color: red;
+   padding: 15px 64px;
+
+ }
+ 
