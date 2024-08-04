@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Support Page</title>
+    <link rel="stylesheet" href="support.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wdth,wght@100..125,100..700&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+
+<body class="body">
+    <div class="headerblock">
+        <div class="firstblock">
+            <div class="firsthover">Stop touching me</div>
+            <img class="profilepic" src="profile.jpg">
+        </div>
+        <div class="secondblock">
+            <a href="home-page.html">
+                <p class="second1">Home</p>
+            </a>
+            <a href="work.html" id="specifiy-link">
+                <p class="second2">Works</p>
+            </a>
+            <a href="about.html">
+                <p class="second3">About</p>
+            </a>
+            <a href="support.html">
+                <p class="second4">Support</p>
+            </a>
+            <a href="contact.html">
+                <p class="second5">Contact</p>
+            </a>
+        </div>
+        <div class="thirdblock">
+            <img class="searchicon" src="search.png">
+        </div>
+    </div>
+    <div class="s-content">
+        <div class="s-ai">
+            <img class="aiphoto" src="aiphoto.png">
+            <p class="s-name">Serina</p>
+        </div>
+
+    </div>
+    <div style="margin-left: 50px; font-size: 20px; margin-top: -280px; margin-bottom: 150px;">
+        <h1 style="color: white;opacity: 0.6; font-size: 35px;">Club AI Speech Recognition</h1>
+        <button style="font-size: 20px; padding: 10px; border-radius: 10px;" id="startButton">Start Listening</button>
+        <button style="font-size: 20px; padding: 10px; border-radius: 10px;" id="stopButton" disabled>Stop
+            Listening</button>
+        <p style="color: white;" id="status">Click "Start Listening" to begin...</p>
+        <p id="transcript"></p>
+
+        <script src="script.js"></script>
+    </div>
+    <hr>
+    <div class="s-cricketBlock" id="cricketWithSerina">
+        <h1 class="s-cricketWithSelena">Cricket With Serina (beta)</h1>
+        <div class="s-cricketGrids">
+            <div class="s-cricketGrids1"><img class="s-selenaIndian" src="images/IndiaSerina.png"> </div>
+            <div class="s-cricketGrids2">
+                <div class="s-cricketRules"><strong>How to play?</strong><br>You try to score and Serina tries to
+                    defend. Set the target and choose one to score.<br>You only have two Wickets.
+                    <br><span style="cursor: pointer; font-size: 16px;" onclick=" alert(`How does this work?
+You pick one and Serina picks one at the same time. If both are equal it will be an out.
+All clear?`)">Click here to know more...</span>
+                </div>
+                <div><button class="s-toss" style=" color: white;" onclick=" targetScore=(Math.round(Math.random()*100)+20); alert(`Target :${targetScore}`); getTarget();
+                        whenClickTarget(); 
+                        ">Get
+                        Target Score</button></div>
+                <div class="s-cricketCardGrids">
+
+                    <img class="s-cricketCards" src="images/runs0.png" onclick="
+                    runs=0;
+                    wicketOrNot(runs);
+                         ">
+                    <img class="s-cricketCards" src="images/runs1.png" onclick="
+                    runs=1;
+                    wicketOrNot(runs);
+                    ">
+                    <img class="s-cricketCards" src="images/runs2.png" onclick="
+                    runs=2;
+                    wicketOrNot(runs);
+                    ">
+                    <img class="s-cricketCards" src="images/runs3.png" onclick="
+                    runs=3;
+                    wicketOrNot(runs);
+                    ">
+                    <img class="s-cricketCards" src="images/runs4.png" onclick="
+                    runs=4;
+                    wicketOrNot(runs);">
+                    <img class="s-cricketCards" src="images/runs6.png" onclick="
+                    runs=6;
+                    wicketOrNot(runs);
+                    ">
+                </div>
+            </div>
+            <div class="s-helpButtons">
+                <p style=" margin-top: 70px; margin-bottom:-20px; color: white ; font-size: 20px;"> Customize Players
+                    name.</p>
+                <input class="player1Input" type="text" minlength="3" maxlength="10" placeholder="Player 1"><br>
+                <input class="player2Input" type="text" minlength="3" maxlength="10" placeholder="Player 2"><br>
+                <button class="playerSetButton" onclick="
+                document.querySelector('.player1Name').innerHTML=document.querySelector('.player1Input').value
+                document.querySelector('.player2Name').innerHTML=document.querySelector('.player2Input').value
+                ">Confirm</button>
+            </div>
+        </div>
+        <div class="s-scoreBoardFlex">
+            <div class="s-scoreDivision1"> <b>YOU</b><br><small>v SER</small>
+            </div>
+            <div class="s-scoreDivision2">
+                <div class="s-boardScore"><span class="sB-runs">0</span> - <span class="sB-wickets">0</span></div>
+            </div>
+            <div class="s-scoreDivision3"><span class="sB-over">0</span>.<span class="sB-ball">0</span></div>
+            <div class="s-scoreDivision4">
+                <div class="player1Class player1BackUp">
+                    <span class="player1Name">PLAYER1</span> <span class="sB-no1Runs">0</span>
+                </div>
+                <div class="player2Class"><span class="player2Name">PLAYER2</span> <span class="sB-no2Runs">0</span>
+                </div>
+            </div>
+            <div></div>
+            <div class="s-scoreDivision5">Target : <span class="sB-target">0</span></div>
+            <div class="s-scoreDivision6"><span class="sB-toWin"></span> </div>
+        </div>
+    </div>
+    <hr style="margin-top: 100px;">
+    <div style="height: 400px; font-size: 20px; margin-left: 50px; color: rgb(204, 204, 204);">
+        <p style=" font-size: 35px;margin-left: 50px;">Predict and Win</p>
+        <div class="s-luckyDraw">
+            <div class="s-luckyGrid1">
+                <p>Serina has a new number in mind.<br><small>Predict it and WIN.<br>hint : Number is between
+                        0-1000</small></p>
+                <input class="s-luckyInput" type="number" placeholder="Enter the number" id="userInput">
+                <button style="padding: 12px; font-size: 16px;
+                border-radius: 10px;" onclick="
+                let inputValue=document.getElementById('userInput').value;
+                let serinaMind=Math.round(Math.random()*1000);
+                if (inputValue===''){
+                    alert('Dude,Enter a number and Submit.')
+                }
+                else{
+                    if(inputValue==serinaMind)
+                {
+                    alert('Congratulations,You done it well\nHere is your SECRET CODE - 1z0m2x9n3c8b\nPlease dont contact us with this Code.\nBe happy with it ');
+                }
+                else{
+                    alert(`Your Prediction was ${inputValue} But Serina's Number was ${serinaMind}`);
+                }
+                }
+                ">Submit</button>
+            </div>
+            <div class="s-luckyGrid2">
+                <img src="images/brainCircuit.png.jpg">
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <hr style="margin-top: 100px; margin-bottom : -290px">
+    <div class="s-whit-block">
+        <div class="white-block">
+            <div class="quicklink">QUICK LINKS
+                <div class="quicklinkflex">
+                    <div class="quicklink1">Home
+                        <ul class="quicklink1-ul">
+                            <li><a href="home-page.html#quick11">Moto</a></li>
+                            <li><a href="home-page.html#quick12">Quick Quiz</a></li>
+                            <li><a href="home-page.html#quick13">Updates</a></li>
+                            <li><a href="home-page.html#quick14">Introduction</a></li>
+                            <li><a href="home-page.html#quick15">Terms </a></li>
+                        </ul>
+                    </div>
+                    <div class="quicklink2">Works
+                        <ul class="quicklink2-ul">
+                            <li><a href="work.html#quick21">Arts</a></li>
+                            <li><a href="work.html#quick22">Plans</a></li>
+                            <li><a href="work.html#quick23">Programs</a></li>
+                            <li><a href="work.html#quick24">Applications</a></li>
+                            <li><a href="work.html#quick25">Trending Books</a></li>
+                            <li><a href="work.html#quick26">Podcast</a></li>
+                        </ul>
+                    </div>
+                    <div class="quicklink3">About
+                        <ul class="quicklink3-ul">
+                            <li><a href="about.html#quick31">History</a></li>
+                            <li><a href="about.html#quick32">Purpose</a></li>
+                            <li><a href="about.html#quick33">Future</a></li>
+                            <li><a href="about.html#quick34">Members</a></li>
+                        </ul>
+                    </div>
+                    <div class="quicklink4">Support
+                        <ul class="quicklink4-ul">
+                            <li><a href="support.html#quick41">Chat with AI</a></li>
+                            <li><a href="support.html#quick42">Customer Service</a></li>
+                            <li><a href="support.html#quick43">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="quicklink5">Contact
+                        <ul class="quicklink5-ul">
+                            <li><a href="contact.html#quick51">E-mail</a></li>
+                            <li><a href="contact.html#quick52">Website</a></li>
+                            <li><a href="contact.html#quick53">Telegram</a></li>
+                            <li><a href="contact.html#quick54">Instagram</a></li>
+                            <li><a href="contact.html#quick55">X</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+<script>
+    let score = 0, serinaScore = 0, serinaValue = 0, tournamentScore = 0, noMatches = 0, strikeRate = 0, runs, targetScore = 0, flag = flag1 = flag2 = 0, fail, wonby, balls = 0, ball = 0, over = 0, wicketsGone, displayTarget;
+    let A = [0, 0];
+    let a = 0, b = 1, c;
+    function wicketOrNot(runs) {
+        fail = 0;
+        let random = Math.random();
+        if (random <= (1 / 6)) {
+            serinaValue = 6;
+        }
+        else if (random > (1 / 6) && random <= (2 / 6)) {
+            serinaValue = 4;
+        }
+        else if (random > (2 / 6) && random <= (3 / 6)) {
+            serinaValue = 3;
+        }
+        else if (random > (3 / 6) && random <= (4 / 6)) {
+            serinaValue = 2;
+        }
+        else if (random > (4 / 6) && random <= (5 / 6)) {
+            serinaValue = 1;
+        }
+        else if (random > (5 / 6) && random <= 1) {
+            serinaValue = 0;
+        }
+        else {
+            alert("Please Contact the The Club");
+        }
+        if (targetScore === 0) {
+            alert(`Please set the target first`);
+        }
+        else {
+
+            if (serinaValue === runs) {
+                wicketsGone = wicketsGone + 1;
+                if (wicketsGone === 1) {
+                    alert(`Thats a Wicket
+Because Serina prepared to defend ${runs} and you attempted to hit ${runs}`);
+                    if (a === 0) {
+                        document.querySelector('.player1Class').classList.add('playerOut');
+                    }
+                    else if (a === 1) {
+                        document.querySelector('.player2Class').classList.add('playerOut');
+                    }
+                    PlayerOut();
+
+                }
+                else if (wicketsGone === 2) {
+                    fail = 1;
+                    wonby = targetScore - score;
+                    if (a === 0) {
+                        document.querySelector('.player1Class').classList.add('playerOut');
+                    }
+                    else if (a === 1) {
+                        document.querySelector('.player2Class').classList.add('playerOut');
+                    }
+                    alert(`Thats a Wicket
+Because Serina prepared to defend ${runs} and you attempted to hit ${runs}
+
+YOU LOSE
+Serina Won by ${wonby} runs.
+Your Total Score is ${score}`);
+                    targetScore = 0;
+                    calcStat();
+
+
+                }
+                else {
+                    alert('ERROR');
+
+                }
+            }
+            else {
+                score = score + runs;
+                playerSwap(runs);
+                balls++;
+                scoreUpdates('YOU WON');
+                over = Math.floor(balls / 6);
+                ball = balls % 6;
+                if (targetScore <= score) {
+                    fail = 2;
+                    alert('You Won\nGet Target and Play More\n' + `Score : ${score}`);
+                    calcStat();
+
+                }
+            }
+        }
+        if (flag === 0 && A[0] >= 50) {
+            alert(`Congratulations Player 1.. Thats a Wonderfull Half Century`);
+            flag = 1;
+        }
+        else if (flag === 1 && A[0] >= 100) {
+            alert(`What a player no.2 GENIUS!!
+What a Century !!! Hats Off`);
+            flag = 2;
+        }
+        if (flag1 === 0 && A[1] >= 50) {
+            alert(`Congratulations Player 2.. Thats a Wonderfull Half Century`);
+            flag1 = 1;
+        }
+        else if (flag1 === 1 && A[1] >= 100) {
+            alert(`What a player no.2 GENIUS!!
+What a Century !!! Hats Off`);
+            flag1 = 2;
+        }
+        if (flag2 === 0 && score >= 50 && wicketsGone === 0) {
+            alert('Partnership reached Fifty');
+            flag2 = 1;
+        }
+        else if (flag2 === 1 && score >= 100 && wicketsGone === 0) {
+            alert('Partnership reached 100');
+            flag2 = 2;
+        }
+        stat();
+
+    }
+    function StatFunction(tournamentScore, noMatches, strikeRate) {
+        alert(`TOURNAMENT STATS 
+Total Runs    : ${tournamentScore}
+No of Matches : ${noMatches}
+Average      : ${Math.round((tournamentScore / noMatches))}`);
+    }
+    function stat() {
+        if (targetScore !== 0) {
+            if (targetScore > score) {
+                whenClickTarget();
+            }
+        }
+        else if (fail === 2) {
+            scoreUpdates(`YOU WON`);
+            document.querySelector('.sB-target').innerHTML = `${dummyTarget}`
+        }
+        else if (fail === 1) {
+            scoreUpdates(`SERINA WON BY ${dummyTarget - score} RUNS`);
+            document.querySelector('.sB-target').innerHTML = `${dummyTarget}`
+            document.querySelector('.s-scoreDivision6').classList.add('s-newDivision6');
+
+        }
+        else {
+            scoreUpdates(`SERINA WON BY ${dummyTarget - score} RUNS`);
+            document.querySelector('.s-scoreDivision6').classList.add('s-newDivision6');
+
+        }
+    }
+
+    function whenClickTarget() {
+        scoreUpdates(`${dummyTarget - score} MORE RUNS TO WIN`);
+    }
+    function scoreUpdates(toWinUpdate) {
+        document.querySelector('.sB-runs').innerHTML = `${score}`
+        document.querySelector('.sB-target').innerHTML = `${targetScore}`
+        document.querySelector('.sB-toWin').innerHTML = toWinUpdate
+        document.querySelector('.sB-over').innerHTML = `${over}`
+        document.querySelector('.sB-ball').innerHTML = `${ball}`
+        document.querySelector('.sB-wickets').innerHTML = `${wicketsGone}`
+        document.querySelector('.sB-no1Runs').innerHTML = A[0]
+        document.querySelector('.sB-no2Runs').innerHTML = A[1]
+    }
+    function calcStat() {
+        tournamentScore += score;
+        noMatches += 1;
+        strikeRate = (Math.round(targetScore / noMatches));
+        flag = 0;
+
+    }
+    //getTarget resets all
+    function getTarget() {
+        score = 0;
+        over = 0;
+        ball = 0;
+        balls = 0;
+        wicketsGone = 0;
+        a = 0;
+        b = 1;
+        A[0] = 0;
+        A[1] = 0;
+        dummyTarget = targetScore;
+        document.querySelector('.player1Class').classList.remove('playerOut');
+        document.querySelector('.player2Class').classList.remove('playerOut');
+        document.querySelector('.player2Class').classList.remove('newPlayer2Class');
+        document.querySelector('.player1Class').classList.add('player1BackUp');
+        document.querySelector('.s-scoreDivision6').classList.remove('s-newDivision6');
+    }
+    function playerSwap(runs) {
+        let oddEven = runs % 2;
+        if (ball === 5 && oddEven == 1 && balls !== 0) {
+            A[a] = A[a] + runs;
+        }
+        else if (ball === 5 || oddEven == 1) {
+            A[a] = A[a] + runs;
+            c = a;
+            a = b;
+            b = c;
+        }
+        else {
+            A[a] = A[a] + runs;
+        }
+        PlayerHigh()
+
+
+
+    }
+    function PlayerOut() {
+        alert(`Player ${a + 1} is Out`)
+        if (a === 0) {
+            a = 1;
+            b = 1;
+        }
+        else if (a === 1) {
+            a = 0;
+            a = 0;
+        }
+    }
+    function PlayerHigh() {
+        document.querySelector('.player1Class').classList.remove('player1BackUp');
+        if (a === 0) {
+            document.querySelector('.player1Class').classList.add('newPlayer1Class');
+            document.querySelector('.player2Class').classList.remove('newPlayer2Class');
+        }
+        else if (a === 1) {
+            document.querySelector('.player2Class').classList.add('newPlayer2Class');
+            document.querySelector('.player1Class').classList.remove('newPlayer1Class');
+        }
+    }
+
+</script>
+
+</html>
